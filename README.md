@@ -1,3 +1,3 @@
 # HELLO GANDA
 
-plain lang na paragraph
+pogi mo sir
