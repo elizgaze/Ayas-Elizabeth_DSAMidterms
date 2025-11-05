@@ -3,7 +3,7 @@
   <title>instructions</title>
   <style>
     body {
-      background: linear-gradient(#9a1c1c,#ffaac6);
+      background-color: #db4c7c;
     }
     .pageDiv {
       backdrop-filter: blur(5px);
@@ -70,27 +70,30 @@
               <li>Enter your repository name and an optional description, then set the visibility to Public.</li>  
               <li>Click “Create repository” to complete the setup of your new GitHub repository.</li>
             </ol>
-          <h3>Connecting Git to GitHub repository including essential commands</h3>
-            <p>Take the following steps to connect you Git to your created GitHub repository:</p>
+        <h2>Connecting Git to GitHub Repository</h2>
+            <p>Follow these steps to connect your local Git to your GitHub repository:</p>
             <ol>
-              <li>In VS Code, open Git Bash in the folder where you want to connect to your GitHub repository.</li>
-              <li>Open your browser and go to https://codemy.com/git/ and copy the commands to Initialize Git.<br>Enter these one by one to your Git bash terminal<br>
-                $ git init<br>
-                $ git config --global user.name "Your Name"<br>
-                $ git config --global user.email "you@youraddress.com"<br>
-                $ git config --global push.default matching<br>
-                $ git config --global alias.co checkout<br>
-              </li>
-              <li>Next, copy the commands to connect to your GitHub repository from the same page.<br>Enter these one by one to your Git bash terminal<br>
-                $ git init <br>
-                $ git add README.md <br>
-                $ git commit -m "first commit" <br>
-                $ git branch -M main <br>
-                $ git remote add origin (your repository URL) <br>
-                $ git push -u origin main  <br>
-              </li>
-              <li>Your local Git is now connected to your GitHub repository.</li>
+              <li>In VS Code, open <strong>Git Bash</strong> in the folder you want to connect to your GitHub repository.</li>
+              <li>Visit <a href="https://codemy.com/git/">https://codemy.com/git/</a> in your browser and copy the commands provided to initialize Git.</li>
+              <li>Paste and execute the following commands <strong>one by one</strong> in your Git Bash terminal, making sure every letter and symbol is typed correctly: <pre><code> $ git init<br> $ git config --global user.name "Your Name"<br> $ git config --global user.email "you@youraddress.com"<br> $ git config --global push.default matching<br> $ git config --global alias.co checkout</code></pre>
+              <li>Next, go to your newly created repository page on GitHub and copy the commands shown:<pre><code> $ git init <br> $ git add README.md <br> $ git commit -m "first commit" <br> $ git branch -M main <br> $ git remote add origin (your repository link) <br> $ git push -u origin main</code></pre></li>
+              <li>To confirm that your local files are linked and updated on GitHub, create a new <strong>HTML file</strong> in your project folder.</li>
+              <li>Go to the <strong>Source Control</strong> tab in VS Code (make sure it’s installed and enabled), and <strong>stage</strong> your changes.</li>
             </ol>
+        <h3>Using Conventional Commits in VS Code</h3>
+        <ol>
+              <li>Install the <strong>Conventional Commits</strong> extension in Visual Studio Code.</li>
+              <li>After installation, open the <strong>Source Control</strong> panel in VS Code.</li>
+              <li>Click the <strong>Conventional Commits</strong> button.</li>
+            <ul>
+                <li>Select <strong>Feature</strong> (for new additions or improvements).</li>
+                <li>Choose <strong>None</strong> if there’s no specific scope.</li>
+                <li>Pick the <strong>✨ Sparkles</strong> emoji to represent a new feature.</li>
+                <li>Write a short and clear <strong>commit message</strong> describing your changes.</li>
+            </ul>
+        </li>
+        <li>Click <strong>Next</strong> until all prompts are completed, then click <strong>Done</strong> to finalize your commit.</li>
+    </ol>
       </div>
     </div>
 </body>
