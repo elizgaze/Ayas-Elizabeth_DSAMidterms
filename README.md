@@ -1,3 +1,3 @@
 # HELLO GANDA
 
-pogi mo sir
+hello ganda
